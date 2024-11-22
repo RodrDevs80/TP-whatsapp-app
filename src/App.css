@@ -1,0 +1,112 @@
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 15px;
+  background-color: green;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.tarjeta-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #efefef;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+.contenedor-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+img {
+  border-radius: 50%;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+.contenedor-sms {
+  border: 1px solid green;
+  border-radius: 5px;
+  margin: 15px;
+  width: 60%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+input {
+  border: 1px solid grey;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.resultado {
+  background-color: #efefef;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.sms {
+  width: 90%;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.remitente {
+  text-align: left;
+  background-color: #b29d9d;
+  padding-left: 7px;
+}
+.destinatario {
+  text-align: right;
+  background-color: rgb(87, 54, 54);
+  padding-right: 7px;
+}
+.contenedor-ultimo-sms {
+  border: 1px solid green;
+  border-radius: 5px;
+  margin: 15px;
+  width: 60%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor-ultimo-sms > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .ci {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .contenedor-tarjetas {
+    width: 100%;
+  }
+}
